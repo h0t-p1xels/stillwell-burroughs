@@ -1,9 +1,9 @@
 /*
- * Stillwell Burroughs Styles
+ * Stillwell Burroughs CSS Styles
  */
 
 /*
- * CSS Custom Properties (Variables)
+ * Custom Properties (Variables)
  */
 
 :root {
@@ -20,7 +20,7 @@
 }
 
 /*
- * CSS Reset Base Styles
+ * CSS Reset
  */
 
 :root {
@@ -193,18 +193,10 @@ summary {
 	display: list-item;
 }
 
-/*
- * CSS Styles
- */
-
 /* Globals */
 
 body {
 	background: var(--white);
-}
-
-section {
-	min-height: 50vh;
 }
 
 section h2 {
@@ -585,14 +577,49 @@ p {
 	color: var(--white);
 }
 
-.contact__details p,
-.contact__details p svg,
+.contact__details {
+	margin: 20px 0;
+	font-style: normal;
+}
+
+.contact__details p {
+	display: flex;
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 2;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
 .contact__details p a {
 	color: var(--white);
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0;
+	margin: auto 0;
+}
+
+.contact__details p svg {
+	padding: 0;
+	margin: auto 10px auto 0;
 }
 
 .contact__details p a:hover {
 	opacity: 0.8;
+}
+
+@media (min-width: 400px) {
+	.contact__details p a {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 500px) {
+	.contact__details p a {
+		font-size: 18px;
+	}
 }
 
 /* Footer */
