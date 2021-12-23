@@ -195,7 +195,9 @@ summary {
 
 /* Globals */
 
+html,
 body {
+	min-width: 300px;
 	background: var(--white);
 }
 
@@ -414,7 +416,7 @@ p {
 .services__card {
 	width: 100%;
 	max-width: 400px;
-	border-radius: 6px 6px 6px 0;
+	border-radius: 8px 8px 8px 0;
 	background: var(--black);
 	margin: 0 auto 30px;
 }
@@ -425,9 +427,8 @@ p {
 
 .services__figure-image {
 	width: 100%;
-	height: 200px;
-	background: var(--blue);
-	opacity: 0.3;
+	height: auto;
+	border-radius: 8px 8px 0 0;
 }
 
 .services__figure-caption {
@@ -469,16 +470,15 @@ p {
 	margin: 0 auto;
 }
 
-.about__copy-wrapper {
-	max-width: 420px;
+.about__image {
+	width: 100%;
+	border-radius: 8px 8px 8px 0;
+	height: auto;
+	margin: 0 auto 30px;
 }
 
-.about__image {
-	max-width: 350px;
-	height: 475px;
-	background: var(--blue);
-	opacity: 0.3;
-	margin: 0 auto 30px;
+.about__copy-wrapper {
+	max-width: 420px;
 }
 
 .about__copy-wrapper h2 {
@@ -502,8 +502,7 @@ p {
 	}
 
 	.about__image {
-		width: 450px;
-		height: 500px;
+		max-width: 550px;
 		margin: 0 auto;
 	}
 }
@@ -532,7 +531,7 @@ p {
 
 .blockchain__card {
 	width: 100%;
-	border-radius: 6px 6px 6px 0;
+	border-radius: 8px 8px 0 0;
 	background: var(--black);
 	padding: 40px;
 	margin: 0 auto 30px;
@@ -568,7 +567,7 @@ p {
 }
 
 .contact__content {
-	max-width: var(--wrapper);
+	max-width: 495px;
 	padding: 80px 20px;
 	margin: 0 auto;
 }
@@ -603,7 +602,8 @@ p {
 
 .contact__details p svg {
 	padding: 0;
-	margin: auto 10px auto 0;
+	margin: auto 4px auto 0;
+	transform: scale(0.7);
 }
 
 .contact__details p a:hover {
@@ -613,6 +613,11 @@ p {
 @media (min-width: 400px) {
 	.contact__details p a {
 		font-size: 16px;
+	}
+
+	.contact__details p svg {
+		margin: auto 10px auto 0;
+		transform: scale(1);
 	}
 }
 

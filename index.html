@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="da">
 	<head>
 		<meta charset="utf-8" />
@@ -7,14 +6,12 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1"
 		/>
-
 		<title>Stillwell Burroughs</title>
 		<meta
 			name="description"
 			content="Stillwell Burroughs description."
 		/>
 		<meta name="author" content="Peter Belling" />
-
 		<meta
 			property="og:title"
 			content="Stillwell Burroughs"
@@ -29,17 +26,34 @@
 			content="Stillwell Burroughs description."
 		/>
 		<meta property="og:image" content="image.png" />
-
-		<link rel="icon" href="favicon.ico" />
-		<link
-			rel="icon"
-			href="favicon.svg"
-			type="image/svg+xml"
-		/>
 		<link
 			rel="apple-touch-icon"
-			href="apple-touch-icon.png"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
 		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/safari-pinned-tab.svg"
+			color="#010307"
+		/>
+		<meta
+			name="msapplication-TileColor"
+			content="#010307"
+		/>
+		<meta name="theme-color" content="#010307" />
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
@@ -53,29 +67,27 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
-
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/styles.css" />
 	</head>
-
 	<body>
 		<header class="header">
 			<div class="header__inner">
-				<a href="#hero" class="header__title"
+				<a href="/#hero" class="header__title"
 					>Stillwell Burroughs</a
 				>
 				<nav class="header__nav">
 					<ul class="header__nav-list">
 						<li class="header__nav-list-item">
-							<a href="#services">Vi Rådgiver</a>
+							<a href="/#services">Vi Rådgiver</a>
 						</li>
 						<li class="header__nav-list-item">
-							<a href="#about">Selskab</a>
+							<a href="/#about">Selskab</a>
 						</li>
 						<li class="header__nav-list-item">
-							<a href="#blockchain">Blockhain</a>
+							<a href="/#blockchain">Blockhain</a>
 						</li>
 						<li class="header__nav-list-item">
-							<a href="#contact">Kontakt</a>
+							<a href="/#contact">Kontakt</a>
 						</li>
 					</ul>
 				</nav>
@@ -96,7 +108,7 @@
 					blockchain kan understøtte din forretning og
 					styrke konkurrencekraften.
 				</p>
-				<a href="#contact">Kontakt os her!</a>
+				<a href="/#contact">Kontakt os her!</a>
 			</div>
 		</div>
 		<main class="main">
@@ -108,8 +120,8 @@
 							<figure class="services__figure">
 								<img
 									class="services__figure-image"
-									src="#"
-									alt="blockchain illustration"
+									src="/images/blockchain.png"
+									alt="blockhain illustration"
 								/>
 								<figcaption
 									class="services__figure-caption"
@@ -122,7 +134,7 @@
 							<figure class="services__figure">
 								<img
 									class="services__figure-image"
-									src="#"
+									src="/images/stockmarket.png"
 									alt="børser illustration"
 								/>
 								<figcaption
@@ -136,7 +148,7 @@
 							<figure class="services__figure">
 								<img
 									class="services__figure-image"
-									src="#"
+									src="/images/capital.png"
 									alt="Kapitaltiltrækning illustration"
 								/>
 								<figcaption
@@ -155,8 +167,8 @@
 						<div class="about__image-wrapper">
 							<img
 								class="about__image"
-								src="#"
-								alt="photograph of Peter Belling"
+								src="/images/peterbelling.png"
+								alt="foto af Peter Belling"
 							/>
 						</div>
 						<div class="about__copy-wrapper">
@@ -287,6 +299,8 @@
 								/>
 							</svg>
 							<a
+								target="_blank"
+								rel="noopener noreferrer"
 								href="https://goo.gl/maps/Drfuycy7ChuXH3HH6"
 								>Svanemøllevej 63, 2900, Hellerup,
 								København.</a
