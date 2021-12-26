@@ -201,18 +201,37 @@ body {
 	background: var(--white);
 }
 
+section {
+	scroll-margin-top: 100px;
+}
+
 section h2 {
-	font-size: 48px;
+	font-size: 26px;
 	padding-bottom: 20px;
 	line-height: 1.2;
 	word-break: break-word;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	color: var(--white);
 	opacity: 0.8;
 	padding-bottom: 14px;
+}
+
+svg {
+	color: var(--white);
+	opacity: 1;
+}
+
+@media (min-width: 700px) {
+	section h2 {
+		font-size: 48px;
+	}
+
+	p {
+		font-size: 18px;
+	}
 }
 
 /* Header */
@@ -286,7 +305,7 @@ p {
 	opacity: 0.8;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
 	.header__inner {
 		flex-direction: row;
 		justify-content: space-between;
@@ -297,15 +316,25 @@ p {
 	}
 
 	.header__nav-list-item {
-		padding: 10px 30px 0 0;
+		padding: 9px 30px 0 0;
 	}
 
 	.header__nav-list-item:last-of-type {
-		padding: 10px 0 0 0;
+		padding: 9px 0 0 0;
+	}
+}
+
+@media (min-width: 700px) {
+	.header__nav-list-item a {
+		font-size: 20px;
 	}
 
-	.header__nav-list-item a {
-		font-size: 16px;
+	.header__nav-list-item {
+		padding: 6px 30px 0 0;
+	}
+
+	.header__nav-list-item:last-of-type {
+		padding: 6px 0 0 0;
 	}
 }
 
@@ -316,7 +345,7 @@ p {
 	background: var(--black);
 	width: 100%;
 	min-height: 100vh;
-	padding: 200px 0 100px;
+	padding: 130px 0 100px;
 	margin: 0;
 }
 
@@ -327,7 +356,7 @@ p {
 }
 
 .hero__content h1 {
-	font-size: 48px;
+	font-size: 32px;
 	line-height: 1.2;
 	color: var(--white);
 	margin-bottom: 10px;
@@ -335,6 +364,7 @@ p {
 }
 
 .hero__content p {
+	font-size: 16px;
 	padding-bottom: 50px;
 	max-width: 450px;
 }
@@ -367,6 +397,7 @@ p {
 	}
 
 	.hero__content p {
+		font-size: 18px;
 		max-width: 580px;
 	}
 }
@@ -416,13 +447,13 @@ p {
 }
 
 .services__cards-container {
-	margin: 50px 0 0;
 	width: 100%;
+	margin: 10px 0 0;
 }
 
 .services__card {
 	width: 100%;
-	max-width: 400px;
+	max-width: 450px;
 	border-radius: 8px 8px 8px 0;
 	background: var(--black);
 	margin: 0 auto 30px;
@@ -450,6 +481,7 @@ p {
 		display: flex;
 		justify-content: space-between;
 		flex-flow: row wrap;
+		margin: 50px 0 0;
 	}
 
 	.services__card {
@@ -490,6 +522,17 @@ p {
 
 .about__copy-wrapper h2 {
 	color: var(--white);
+}
+
+.about__copy-wrapper p a svg {
+	color: var(--white);
+	transform: scale(1.2);
+	padding: 0;
+	margin: 20px 0 0;
+}
+
+.about__copy-wrapper p a svg:hover {
+	opacity: 0.8;
 }
 
 @media (min-width: 800px) {
@@ -533,12 +576,13 @@ p {
 }
 
 .blockchain__cards-container {
-	margin: 30px 0;
+	width: 100%;
+	margin: 10px 0 0;
 }
 
 .blockchain__card {
 	width: 100%;
-	border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 8px 0;
 	background: var(--black);
 	padding: 40px;
 	margin: 0 auto 30px;
@@ -548,14 +592,21 @@ p {
 	margin: 0 auto;
 }
 
+.blockchain__card-heading {
+	color: var(--white);
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
 @media (min-width: 900px) {
 	.blockchain__cards-container {
 		display: flex;
 		justify-content: space-between;
+		margin: 30px 0 0;
 	}
 
 	.blockchain__card {
-		flex: 1 0 45%;
+		flex: 1 0 25%;
 		margin: 0 30px 0 0;
 		max-width: 620px;
 	}
@@ -653,6 +704,5 @@ p {
 .footer__inner p {
 	font-weight: 600;
 	color: var(--black);
-	font-style: italic;
 	margin: 0 auto;
 }
