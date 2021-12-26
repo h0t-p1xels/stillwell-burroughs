@@ -33,6 +33,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -201,6 +202,7 @@ body {
 	background: var(--white);
 }
 
+main,
 section {
 	scroll-margin-top: 100px;
 }
@@ -232,6 +234,37 @@ svg {
 	p {
 		font-size: 18px;
 	}
+}
+
+/* Skip Link */
+
+.skip-link {
+	position: absolute;
+	left: 0;
+	z-index: 20;
+	background: var(--black);
+	padding: 20px;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: transform 0.2s ease-in-out,
+		opacity 0.2s ease-in-out;
+}
+
+.skip-link a {
+	color: var(--white);
+	text-decoration: none;
+	padding: 10px 14px;
+	font-weight: 700;
+}
+
+.skip-link a:hover {
+	opacity: 0.8;
+}
+
+.skip-link:focus,
+.skip-link:focus-within {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 /* Header */
